@@ -65,8 +65,8 @@ El proyecto simula un caso real de entrega profesional, con resultados presentad
 
 ## 💡 Conclusiones Clave
 
-- Las ventas alcanzan su pico en diciembre, mostrando un fuerte componente estacional.
-- Los productos electrónicos representan la mayor parte de los ingresos totales.
+- Completar
+- Completar
 - Completar
 - Completar
 - Completar
