@@ -196,66 +196,121 @@ Hombres compran más en todas las categorías menos en Home & Furniture, donde h
 
 Objetivo: Conocer el comportamiento de los clientes.
 
-¿Quiénes son los que más compran?
+#### ¿Quiénes son los que más compran?
 
-Ticket promedio por cliente.
+El gráfico del **Top 10 clientes** con mayor gasto total revela que los clientes con mayor facturación individual superaron los $890, llegando el principal comprador a $994. Aunque representan una fracción pequeña del total, estos clientes concentran un alto valor de compra, por lo cual son candidatos ideales para estrategias de **fidelización personalizada** o programas de recompensas.
 
-Frecuencia de compra (n° de compras por cliente).
+![Clientes que más compran](../images/graph_9.png)
 
-Análisis por tipo de login (Guest vs Member).
+#### Ticket promedio por cliente
 
-Distribución por género.
+La distribución del ticket promedio indica una media de $150,85, pero con una notable dispersión. Se detectan dos grupos prominentes: uno con tickets promedio inferiores a $100 y otro que supera los $200. Esto sugiere que existen segmentos bien diferenciados dentro de la base: clientes de bajo gasto y clientes de alto valor, sobre los cuales se podrían diseñar **estrategias diferenciadas** de retención y comunicación.
+
+![Ticket promedio por cliente](../images/graph_10.png)
+
+#### Frecuencia de compra
+
+La mayoría de los clientes realizaron **una sola compra** (28.825), y una proporción mucho menor realizó dos (8.321) o más compras. Este comportamiento señala una baja tasa de recompra, lo que plantea un desafío —y también una oportunidad— para desarrollar programas de lealtad o remarketing orientados a aumentar la frecuencia de compra.
+
+![Frecuencia de compra](../images/graph_11.png)
+
+#### Análisis por tipo de login
+
+El tipo de login muestra que la mayoría de las compras fueron realizadas por **usuarios registrados** ("Member"), lo que representa más del 95 % del total. Los usuarios “Guest”, “First SignUp” o “New” son una minoría. Esto es positivo, ya que el login permite un seguimiento individualizado, mejorando la capacidad de segmentación y personalización en futuras campañas.
+
+![Análisis por tipo de login (Guest vs Member)](../images/graph_12.png)
+
+#### Distribución por género
+
+Se observa que los hombres realizaron más compras que las mujeres: 28.132 vs 23.150. Esta diferencia, aunque no extrema, puede tener implicancias al segmentar campañas y productos.
+
+![Distribución por género](../images/graph_13.png)
 
 Preguntas que responde:
 
-¿Quiénes conforman mi base de clientes?
+**¿Quiénes conforman mi base de clientes?**
 
-¿Qué clientes deberían estar en un programa de fidelización?
+Usuarios registrados (Members), mayoritariamente hombres, con baja frecuencia de compra y tickets promedio diversos.
 
-¿Qué tipo de inicio de sesión prefieren mis clientes?
+**¿Qué clientes deberían estar en un programa de fidelización?**
 
-¿A quién le vendo qué categorías? (cruce cliente-género-producto)
+Aquellos identificados en el top 10 de gasto total, además de los clientes con tickets promedio altos o con más de una compra realizada.
 
-### 6.5. Regiones o zonas
+**¿Qué tipo de inicio de sesión prefieren mis clientes?**
 
-Objetivo: Analizar ventas por ubicación.
+El login tipo “Member” es claramente dominante, lo que facilita la aplicación de estrategias personalizadas y seguimiento histórico.
 
-Ventas por ciudad o región.
+**¿A quién le vendo qué categorías? (cruce cliente-género-producto)**
 
-Ticket promedio por región.
+- Fashion: popular entre ambos géneros, con ligera preferencia masculina.
+- Home & Furniture: con reparto equilibrado.
+- Auto & Accessories: principalmente hombres.
+- Electronics: consumo levemente mayor en mujeres, lo que sugiere interés femenino en tecnología y hogar digital.
 
-Mapa (si tenés coordenadas o ciudad/estado).
-
-Preguntas que responde:
-
-¿En qué región se vende más?
-
-¿Qué zonas están poco explotadas?
-
-### 6.6. Dispositivos
+### 6.5. Dispositivos
 
 Objetivo: Ver patrones por canal de acceso.
 
-Ventas por tipo de dispositivo (web vs mobile).
+#### Ventas por tipo de dispositivo (web vs mobile).
 
-Comportamiento comparado: ticket promedio, cantidad de productos.
+El análisis de ventas según tipo de dispositivo revela una amplia preferencia por el uso de la Web, que concentra aproximadamente $7,25 millones en ventas, frente a los $0,56 millones generados desde dispositivos móviles. Esto representa más del 92 % del total procesado a través de la plataforma web, marcando una gran brecha en el comportamiento de compra según dispositivo.
+
+Este dato evidencia que los usuarios prefieren realizar sus compras desde computadoras o navegadores web, ya sea por comodidad, visibilidad o mayor confianza en el proceso de pago. Es una señal clara para enfocar recursos en seguir optimizando la experiencia web, aunque también representa una oportunidad de mejora para el canal mobile, posiblemente poco desarrollado o con menor usabilidad.
+
+![Ventas por tipo de dispositivo](../images/graph_14.png)
+
+#### Comportamiento comparado: ticket promedio, cantidad de productos.
+
+| Device_Type | Ticket Promedio | Unidades Promedio | Cantidad de Compras |
+| ----------- | --------------- | ----------------- | ------------------- |
+| Mobile      | 154.002187      | 2.336249          | 3658                |
+| Web         | 152.209474      | 2.515769          | 47624               |
+
+Pese a la enorme diferencia en volumen de compras, los usuarios móviles muestran un ticket promedio levemente superior y una cantidad de unidades por compra apenas inferior. Esto sugiere que, si bien la plataforma mobile no es la principal vía de conversión, los usuarios que compran desde allí son valiosos en términos de gasto.
 
 Pregunta que responde:
 
-¿Qué dispositivos usan mis clientes para contactarme?
+**¿Qué dispositivos usan mis clientes para contactarme?**
 
-### 6.7. Logística y Entregas
+Principalmente utilizan navegadores web desde computadoras o notebooks. Los móviles representan una minoría en volumen total de compras, aunque quienes los usan gastan igual o incluso un poco más por transacción. Hay una clara oportunidad de mejorar el rendimiento del canal móvil.
+
+### 6.6. Logística y Entregas
 
 Objetivo: Evaluar eficiencia en la entrega.
 
-Distribución de “Aging” (días de entrega).
+#### Distribución de “Aging” (días de entrega).
 
-Comparación por mes / producto / región.
+El gráfico a continuación muestra la cantidad de órdenes según los días que transcurrieron desde que se realizó la compra hasta que fue entregada:
+
+La mayoría de las órdenes (7.467) se entregaron en un solo día, lo cual indica una buena capacidad de respuesta logística. El resto de las entregas se distribuye de manera bastante uniforme entre los días 2 y 10, lo cual sugiere que, si bien el promedio ronda los 5 días, hay una porción importante de entregas rápidas.
+
+![Distribución de Aging (días de entrega)](../images/graph_15.png)
+
+#### Comparación por mes
+
+En esta línea temporal se observa que el tiempo promedio de entrega se mantiene relativamente constante a lo largo de los meses, oscilando entre 5.18 y 5.31 días. El mes con mayor rapidez fue noviembre, con un promedio de 5.18 días, mientras que marzo y diciembre presentaron los valores más altos (5.31 días), aunque las diferencias son poco significativas. Esto demuestra una buena estabilidad en los tiempos logísticos.
+
+![Comparación por mes](../images/graph_16.png)
 
 Pregunta que responde:
 
-¿Cuál es mi velocidad de entrega y cómo varía?
+**¿Cuál es mi velocidad de entrega y cómo varía?**
+
+- La velocidad de entrega promedio es de aproximadamente 5 días.
+- La mayoría de las entregas se realiza entre 1 y 5 días, con un pico en el primer día.
+- A lo largo de los meses, los tiempos de entrega se mantienen estables, lo cual refleja una logística consistente y eficiente.
 
 ## 7. Conclusiones y Recomendaciones
 
-## 8. Anexo y Recursos
+El análisis exploratorio realizado permitió identificar patrones relevantes en el comportamiento de compra, rendimiento de productos y eficiencia logística en una plataforma de e-commerce. A partir de los hallazgos, se extraen las siguientes conclusiones y recomendaciones clave:
+
+- **Ventas con fuerte estacionalidad**: Se detectan picos de ventas en los meses de mayo, julio y noviembre, lo cual sugiere que existen períodos claves de alto rendimiento comercial posiblemente asociados a campañas o eventos específicos.
+- **Categorías y productos estrella**: La categoría Fashion domina en volumen de ventas y ticket promedio. Productos como T-Shirts, Titan Watch y Running Shoes concentran un alto desempeño, sobre todo cuando se aplican descuentos.
+
+- **Dependencia de las promociones**: Los productos más vendidos en valor fueron comercializados exclusivamente con descuentos, lo que indica una alta sensibilidad al precio por parte de los clientes.
+
+- **Clientes poco fidelizados**: La mayoría de los clientes realizó una sola compra, lo cual revela una baja retención. No obstante, existe un grupo reducido de alto valor que justifica estrategias de fidelización diferenciadas.
+
+- **Dispositivo como canal de compra**: La Web es el canal dominante, pero los usuarios móviles tienen un ticket promedio ligeramente mayor. Esto revela una oportunidad de mejora en la experiencia mobile.
+
+- **Eficiencia logística estable**: La mayoría de las entregas se completan en 1 a 5 días, con un promedio general de 5 días que se mantiene constante durante el año.
