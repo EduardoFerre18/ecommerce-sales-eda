@@ -149,7 +149,7 @@ Objetivo: Evaluar el desempeño de las categorías.
 
 #### Productos más vendidos dentro de cada categoría.
 
-| ID  | Product_Category   | Product                | Quantity |
+| Id  | Product_Category   | Product                | Quantity |
 | --- | ------------------ | ---------------------- | -------- |
 | 2   | Auto & Accessories | Car Body Covers        | 2040.0   |
 | 5   | Auto & Accessories | Car Pillow & Neck Rest | 2012.0   |
