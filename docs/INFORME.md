@@ -64,53 +64,133 @@ Finalmente, se buscará explorar si existen diferencias relevantes por género, 
 
 ### 6.1. Ventas Generales
 
-Objetivo: Analizar el volumen y evolución total de ventas.
+**Objetivo**: Analizar el volumen y la evolución total de ventas, así como identificar patrones según el calendario y el horario.
 
-Total de ventas ($ y unidades).
+#### Total de ventas ($ y unidades).
 
-Ventas mensuales (línea).
+Se vendieron un total de $7.812.164 y 128.357 unidades en el período analizado. Este valor nos da un panorama inicial sobre el volumen del negocio, permitiendo evaluar estrategias comerciales o presupuestarias.
 
-Ventas por día de la semana / hora (barras o heatmap).
+#### Ventas mensuales
+
+El gráfico de línea muestra que las ventas tienen un comportamiento creciente a lo largo del año, con picos notables en los meses de mayo, julio y noviembre. Esto puede reflejar estacionalidad, promociones u otras campañas comerciales.
+
+![Ventas mensuales](../images/graph_1.png)
+
+#### Ventas por hora y día
+
+Según el mapa de calor, las ventas se concentran mayormente entre las 10:00 y las 22:00, especialmente los días martes y miércoles. Esto es coherente con los picos vistos en el gráfico anterior y sugiere que los usuarios compran más en horario laboral/tarde.
+
+![Ventas por hora y día - mapa de calor](../images/graph_2.png)
 
 Preguntas que responde:
 
-¿Cómo influyen la fecha y la hora en mis ventas?
+**¿Cómo influyen la fecha y la hora en las ventas?**
+
+Se observa un patrón semanal donde martes y miércoles concentran las mayores ventas, y un patrón horario que indica más actividad entre las 10:00 y las 22:00. Además, se identifica una evolución mensual creciente, con ciertos picos estacionales que podrían relacionarse con campañas o fechas comerciales.
 
 ### 6.2. Productos
 
-Objetivo: Evaluar desempeño de productos.
+Objetivo: Evaluar el desempeño de los productos según cantidad vendida, rentabilidad y efecto de los descuentos.
 
-Top 10 productos más vendidos.
+#### Top 10 productos más vendidos
 
-Productos más rentables (Total = cantidad × precio).
+![Top 10 productos más vendidos](../images/graph_3.png)
 
-Comparación de productos con y sin descuentos.
+El gráfico muestra que los productos más vendidos en unidades fueron:
+
+- Titan Watch (6.254 unidades),
+- Formal Shoes, Sports Wear y Running Shoes (más de 6.000 cada uno),
+- así como Fossil Watch, Sneakers y T-Shirts.
+
+Esto indica una alta rotación de estos productos, lo que puede deberse a popularidad, precio accesible o campañas efectivas.
+
+#### Productos más rentables
+
+En cuanto a ganancia total, los T-Shirts lideran el ranking con más de $340.000, seguidos por Titan Watch, Running Shoes y Jeans. A pesar de no ser los más vendidos en unidades, algunos productos (como Jeans, Towels y Sofa Covers) destacan por su alto margen unitario.
+
+![Productos más rentables](../images/graph_4.png)
+
+#### Comparación de productos con y sin descuentos
+
+Al analizar los 10 productos más vendidos en valor, se observa que todos fueron vendidos exclusivamente con descuentos. Esto evidencia una fuerte dependencia del precio promocional para alcanzar altos niveles de venta. Es probable que estos productos tengan una alta sensibilidad al precio, por lo que las promociones cumplen un rol clave en su desempeño.
+
+![Productos con y sin descuentos](../images/graph_5.png)
 
 Preguntas que responde:
 
-¿Qué productos conviene promocionar?
+**¿Qué productos conviene promocionar?**
+Los productos que aparecen en el Top 10 de unidades vendidas y ganancia total (como "T-Shirts", "Titan Watch", "Formal Shoes") muestran un buen rendimiento general. Además, al venderse completamente con descuento, se sugiere continuar promocionándolos para mantener su volumen.
 
-¿Qué producto obtiene más beneficios por unidad?
+**¿Qué producto obtiene más beneficios por unidad?**
 
-¿Cómo afectan los descuentos a las ventas?
+Aunque no se muestra en forma directa, productos como "T-Shirts" y "Running Shoes" aparecen tanto en los rankings de volumen como en el de ganancia, lo que indica una alta rentabilidad por unidad.
+
+**¿Cómo afectan los descuentos a las ventas?**
+
+Se observa que en todos los casos del Top 10 de ventas en valor, las ventas se lograron solo cuando se aplicaron descuentos, lo que sugiere que los descuentos fueron determinantes para el volumen de ventas.
 
 ### 6.3. Categorías
 
 Objetivo: Evaluar el desempeño de las categorías.
 
-Ventas totales por categoría.
+#### Ventas totales por categoría
 
-Ticket promedio por categoría.
+![Ventas totales por categoría](../images/graph_6.png)
 
-Productos más vendidos dentro de cada categoría.
+- Fashion lidera con más de **$4.35M**, duplicando a Home & Furniture **($1.98M)**.
+- Esto demuestra que la categoría de moda es claramente la más relevante en términos de facturación.
+
+#### Ticket promedio por categoría.
+
+![Ticket promedio por categoría](../images/graph_7.png)
+
+- Fashion también tiene el ticket promedio más alto: $169.46, lo que indica que las compras individuales en esta categoría son de mayor valor.
+- Las demás rondan entre $127.98 y $146.15, con Home & Furniture como la de menor ticket promedio.
+
+#### Productos más vendidos dentro de cada categoría.
+
+| ID  | Product_Category   | Product                | Quantity |
+| --- | ------------------ | ---------------------- | -------- |
+| 2   | Auto & Accessories | Car Body Covers        | 2040.0   |
+| 5   | Auto & Accessories | Car Pillow & Neck Rest | 2012.0   |
+| 8   | Auto & Accessories | Tyre                   | 2010.0   |
+| 18  | Electronic         | Speakers               | 581.0    |
+| 10  | Electronic         | Fans                   | 523.0    |
+| 17  | Electronic         | Samsung Mobile         | 501.0    |
+| 31  | Fashion            | Titak watch            | 6254.0   |
+| 22  | Fashion            | Formal Shoes           | 6154.0   |
+| 28  | Fashion            | Sports Wear            | 6093.0   |
+| 33  | Home & Furniture   | Beds                   | 3908.0   |
+| 36  | Home & Furniture   | Dinning Tables         | 3874.0   |
+| 38  | Home & Furniture   | Sofa Covers            | 3852.0   |
+
+Esto muestra que dentro de cada categoría hay productos estrella con alto desempeño.
+
+#### Distribución por género dentro de cada categoría
+
+![Distribución por género dentro de cada categoría](../images/graph_8.png)
+
+- Fashion es la categoría más comprada por ambos géneros, aunque con mayor volumen por hombres (14.281) que mujeres (11.365).
+
+- Home & Furniture tiene una distribución más pareja.
+
+- En Auto & Accessories, predominan los hombres.
+
+- En Electronic, la diferencia es mínima.
 
 Preguntas que responde:
 
-¿Qué categorías conviene promocionar?
+**¿Qué categorías conviene promocionar?**
 
-¿Qué categorías de productos vendo?
+Fashion, por su volumen total de ventas, alto ticket promedio y fuerte demanda en ambos géneros. También puede convenir Auto & Accessories, por su buen ticket y alto interés masculino.
 
-¿Distribución por género/categoría? (si hay datos de género)
+**¿Qué categorías de productos vendo?**
+
+Fashion, Home & Furniture, Auto & Accessories, y Electronic.
+
+**¿Distribución por género/categoría?**
+
+Hombres compran más en todas las categorías menos en Home & Furniture, donde hay un equilibrio. Fashion es dominante en ambos géneros, ideal para campañas generales.
 
 ### 6.4. Clientes
 
